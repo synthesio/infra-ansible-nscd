@@ -1,0 +1,9 @@
+---
+nscd_threads: 16
+nscd_max_threads: 256
+nscd_enable_cache_hosts: "yes"
+nscd_persistent_cache_hosts: "yes"
+nscd_enable_cache_passwd: "no"
+nscd_enable_cache_group: "no"
+nscd_enable_cache_services: "no"
+nscd_enable_cache_netgroup: "no"

@@ -1,0 +1,6 @@
+---
+- name: Restart nscd
+  service: name=nscd state=restarted
+
+- name: Invalidate nscd hosts cache
+  shell: "nscd --invalidate=hosts"

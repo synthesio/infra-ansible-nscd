@@ -1,0 +1,7 @@
+---
+- name: install nscd
+  apt: name=nscd state=latest
+
+- name: nscd configuration file
+  template: src=nscd.conf.j2 dest=/etc/nscd.conf
+  notify: Restart nscd

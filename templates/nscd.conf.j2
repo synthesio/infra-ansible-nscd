@@ -63,7 +63,7 @@
         auto-propagate          group           yes
 
         enable-cache            hosts           {{ nscd_enable_cache_hosts }}
-        positive-time-to-live   hosts           3600
+        positive-time-to-live   hosts           600
         negative-time-to-live   hosts           20
         suggested-size          hosts           211
         check-files             hosts           yes
@@ -78,4 +78,4 @@
         check-files             services        yes
         persistent              services        yes
         shared                  services        yes
-        max-db-size             services        33554432                                                    
+        max-db-size             services        33554432

@@ -1,0 +1,10 @@
+# Ansible NSCD role
+
+This role deploys nscd on a Debian hosts.
+
+```
+hosts: all
+  remote_user: root
+  roles:
+    - nscd
+```

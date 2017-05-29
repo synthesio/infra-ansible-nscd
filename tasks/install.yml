@@ -1,0 +1,7 @@
+---
+
+- name: install nscd
+  apt: 
+    name: nscd
+    state: latest
+    update_cache: no
